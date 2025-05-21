@@ -17,7 +17,23 @@
     font-family: 'Roboto Medium';
     src: url('https://dlib.biblhertz.it/fonts/Roboto/Roboto-Medium.eot?') format('eot'), url('https://dlib.biblhertz.it/fonts/Roboto/Roboto-Medium.woff') format('woff'), url('https://dlib.biblhertz.it/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
 }
-
+.capsule {
+    padding: 0.5em 0 0 0;
+    margin-bottom: 1em;
+}
+.capsule a {
+    display: block;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+}
+.capsule p {
+    font-size: 90%;
+    font-style: italic;
+}
+.capsule a img {
+    max-width: calc(100%);
+}
 body {
     margin: 0;
     padding: 0;
@@ -201,11 +217,6 @@ h5 {
     margin-left: 0.25em;
 }
 
-.capsule {
-    border: thin solid gray;
-    padding: 1em;
-    margin-bottom: 1em;
-}
 p {
     text-align: justify;
     text-justify: inter-word;
