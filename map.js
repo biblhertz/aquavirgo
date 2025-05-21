@@ -2,11 +2,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoia2V3ZXJuZXIiLCJhIjoiY21hdzdmNjQ0MDlkbDJsc2Rpd
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/kewerner/clpv72kf201dq01qtd03ig1ka', //clpv72kf201dq01qtd03ig1ka', //ckz8gxm82000z14p666y9alzh',
-    center: [12.6331098, 41.9112259],
+    center: [12.485293, 41.901317],
     hash: true, // HASH
-    zoom: 16.71,
-    bearing: 0,
-    pitch: 0, // was 45
+    zoom: 6.99,
+    bearing: -8,
+    pitch: 52, 
     antialias: true
 });
 
