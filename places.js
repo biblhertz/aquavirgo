@@ -1,7 +1,14 @@
 var places = {
     "SorgentiSalone": {
         "center":  [ 12.6331098, 41.9112259 ],
-        "bearing": 32,
+        "bearing": 12,
+        "zoom": 18,
+        "speed": 1,
+        "pitch": 40
+    },
+    "Nazzareno": {
+        "center":  [ 12.4837635, 41.9026744 ],
+        "bearing": 290,
         "zoom": 18,
         "speed": 1,
         "pitch": 40
