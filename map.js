@@ -31,42 +31,9 @@ for (const input of inputs) {
 
 map.on('style.load', () => {
 
-    map.addSource('Pianta1600', {
-        'type': 'raster',
-        'url': 'mapbox://kewerner.8s2mayod'
-    });
-    map.addSource('Pianta1753', {
-        'type': 'raster',
-        'url': 'mapbox://kewerner.a5544kml'
-    });
-    map.addSource('Pianta1642', {
-        'type': 'raster',
-        'url': 'mapbox://kewerner.5yigo799'
-    });
-    map.addLayer({
-        'id': 'Pianta1600',
-        'slot': 'top',     //trying to make it on-top of everything
-        'source': 'Pianta1600',
-        'type': 'raster',
-        'paint': {
-            'raster-opacity': 0
-        }
-    });
-    map.addLayer({
-        'id': 'Pianta1753',
-        'source': 'Pianta1753',
-        'type': 'raster',
-        'paint': {
-            'raster-opacity': 0
-        }
-    });
-    map.addLayer({
-        'id': 'Pianta1642',
-        'source': 'Pianta1642',
-        'type': 'raster',
-        'paint': {
-            'raster-opacity': 0
-        }
+    map.addSource('percorso-line', {
+        'type': 'geojson',
+        'data': 'percorso.geojson'
     });
     map.addSource('places-poly', {
         'type': 'geojson',
@@ -75,6 +42,20 @@ map.on('style.load', () => {
     map.addSource('places', {
         'type': 'geojson',
         'data': 'places.geojson'
+    });
+    map.addLayer({
+        "id": "percorso",
+        "type": "line",
+        "slot": "top",
+        "source": "percorso-line",
+        // "layout": {
+        //     'text-z-elevate': true,
+        // },
+        "paint": {
+            "line-opacity": 0.5,
+            "line-color": "blue",
+            "line-width": 5,
+        },        "interactive": true
     });
     map.addLayer({
         "id": "places-poly",
