@@ -104,7 +104,7 @@ em {
     padding: 10px;
     z-index: 10;
     color: darkslategray;
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.85);
     border-radius: 4px;
     box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
 }
@@ -190,7 +190,7 @@ em {
     font-family: 'Merriweather', sans-serif;
     line-height: 1.5em;
     color: rgb(42, 42, 42);
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.85);
     font-size: 90%;
     /*border-left: thin groove black;*/
     border-radius: 4px;
