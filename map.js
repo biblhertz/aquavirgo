@@ -121,6 +121,7 @@ map.on('click', function(e) {
     window.open('#' + feature.properties.name, '_parent');
     document.getElementsByClassName('active')[0].removeAttribute("class");
     document.getElementById(feature.properties.name).setAttribute('class', 'active');
+    document.getElementById('features').removeAttribute('class');
 });
 
 var placeNames = Object.keys(places);
