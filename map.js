@@ -139,6 +139,7 @@ document.getElementById('list').onclick = function(e) {
         window.open('#' + pos, '_parent');
         document.getElementsByClassName('active')[0].removeAttribute("class");
         document.getElementById(pos).setAttribute('class', 'active');
+        document.getElementById('features').removeAttribute('class');
     }
 };
 

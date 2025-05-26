@@ -1,10 +1,10 @@
 var places = {
     "SorgentiSalone": {
-        "center":  [ 12.6331098, 41.9112259 ],
+        "center":  [ 12.6320, 41.912387 ],
         "bearing": 12,
-        "zoom": 18,
+        "zoom": 16.5,
         "speed": 1,
-        "pitch": 40
+        "pitch": 5
     },
     "Nazzareno": {
         "center":  [ 12.4837635, 41.9026744 ],
