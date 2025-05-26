@@ -108,6 +108,9 @@ map.on('style.load', () => {
 
 });
 map.on('click', function(e) {
+
+    $("#welcome").fadeOut('5000');
+
     var features = map.queryRenderedFeatures(e.point, {
         layers: ['places-poly', 'places-label', 'places-circle']
     });
