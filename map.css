@@ -34,6 +34,9 @@
 .capsule a img {
     max-width: calc(100%);
 }
+.hidden {
+    visibility: hidden;
+}
 body {
     margin: 0;
     padding: 0;
