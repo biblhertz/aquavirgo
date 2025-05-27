@@ -6,7 +6,7 @@ const map = new mapboxgl.Map({
     hash: false, // otherwise conflict with regular id-based hashes
     zoom: 13,
     bearing: -10,
-    pitch: 25,
+    pitch: 0,
     antialias: true
 });
 
