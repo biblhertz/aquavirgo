@@ -25,6 +25,7 @@ const inputs = layerList.getElementsByTagName('input');
 for (const input of inputs) {
     input.onclick = (layer) => {
         const layerId = layer.target.id;
+        $("#welcome").fadeOut('5000');
         map.setStyle('mapbox://styles/kewerner/' + layerId);
     };
 }
@@ -131,6 +132,7 @@ for (var i = 0; i < placeNames.length; i++) {
 
 document.getElementById('list').onclick = function(e) {
     var pos = e.target.getAttribute('data-id');
+    $("#welcome").fadeOut('5000');
     if (pos !== null) {
         // document.getElementsByClassName('active')[0].removeAttribute("class");
         // e.target.setAttribute('class', 'active');
