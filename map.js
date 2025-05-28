@@ -10,6 +10,10 @@ const map = new mapboxgl.Map({
     antialias: true
 });
 
+$( function() {
+    $( "#maps" ).accordion();
+} );
+
 const bounds = [
     [12.40, 41.81], // [west, south]
     [12.7, 41.95]  // [east, north]
