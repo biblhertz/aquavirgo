@@ -19,7 +19,7 @@ map.setMaxBounds(bounds);
 
 // const slider = document.getElementById('slider');
 
-const layerList = document.getElementById('menu');
+const layerList = document.getElementById('maps');
 const inputs = layerList.getElementsByTagName('input');
 
 for (const input of inputs) {
