@@ -134,7 +134,7 @@ for (var i = 0; i < placeNames.length; i++) {
     var placeName = placeNames[i];
 };
 
-document.getElementById('list').onclick = function(e) {
+document.getElementById('points').onclick = function(e) {
     var pos = e.target.getAttribute('data-id');
     $("#welcome").fadeOut('5000');
     if (pos !== null) {
