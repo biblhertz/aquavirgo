@@ -55,6 +55,13 @@ var places = {
         "speed": 1,
         "pitch": 40
     },
+    "FontanaFlaminia": {
+        "center":  [ 12.473258, 41.918256 ],
+        "bearing": 32,
+        "zoom": 16.5,
+        "speed": 1,
+        "pitch": 40
+    },
     "Nazzareno": {
         "center":  [ 12.4837635, 41.9026744 ],
         "bearing": 290,

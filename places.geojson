@@ -11,6 +11,7 @@
 { "type": "Feature", "properties": { "name": "ViaPietralata", "title": "Via di Pietralata", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.533035, 41.926767 ] } },
 { "type": "Feature", "properties": { "name": "PiazzaSEmerenziana", "title": "Piazza Santa Emerenziana", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.516206, 41.929042 ] } },
 { "type": "Feature", "properties": { "name": "VillaGiulia", "title": "Villa Giulia", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.478479, 41.91802 ] } },
+{ "type": "Feature", "properties": { "name": "FontanaFlaminia", "title": "Fontana Via Flaminia", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.473258, 41.918256 ] } },
 { "type": "Feature", "properties": { "name": "Nazzareno", "title": "Rovine Via del Nazzareno", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.4837635, 41.9026744  ] } },
 { "type": "Feature", "properties": { "name": "FontanaTrevi", "title": "Fontana di Trevi", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.4832644, 41.9009839 ] } }
 ]
