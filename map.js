@@ -21,6 +21,9 @@ const bounds = [
 
 map.setMaxBounds(bounds);
 
+$("#welcome").delay( 3000 ).fadeOut('5000');
+
+
 // const slider = document.getElementById('slider');
 
 const layerList = document.getElementById('maps');
@@ -29,7 +32,7 @@ const inputs = layerList.getElementsByTagName('input');
 for (const input of inputs) {
     input.onclick = (layer) => {
         const layerId = layer.target.id;
-        $("#welcome").fadeOut('5000');
+        // $("#welcome").fadeOut('5000');
         map.setStyle('mapbox://styles/kewerner/' + layerId);
     };
 }
@@ -524,7 +527,7 @@ map.on('style.load', () => {
 
 map.on('click', function(e) {
 
-    $("#welcome").fadeOut('5000');
+    // $("#welcome").fadeOut('5000');
 
     var features = map.queryRenderedFeatures(e.point, {
         layers: ['places-poly', 'places-label', 'places-circle']
@@ -546,7 +549,7 @@ for (var i = 0; i < placeNames.length; i++) {
 
 document.getElementById('points').onclick = function(e) {
     var pos = e.target.getAttribute('data-id');
-    $("#welcome").fadeOut('5000');
+    // $("#welcome").fadeOut('5000');
     if (pos !== null) {
         // document.getElementsByClassName('active')[0].removeAttribute("class");
         // e.target.setAttribute('class', 'active');
