@@ -5,7 +5,7 @@ const map = new mapboxgl.Map({
     center: [12.48200, 41.9050],
     hash: false, // otherwise conflict with regular id-based hashes
     zoom: 15,
-    bearing: -10,
+    bearing: 0,
     pitch: 0,
     antialias: true
 });
