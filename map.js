@@ -57,81 +57,6 @@ var sliderSignorelli1950 = document.getElementById('sliderSignorelli1950');
 
 map.on('style.load', () => {
 
-    map.addSource('percorso-line', {
-        'type': 'geojson',
-        'data': 'percorso.geojson'
-    });
-    map.addSource('places-poly', {
-        'type': 'geojson',
-        'data': 'places-polygon.geojson'
-    });
-    map.addSource('places', {
-        'type': 'geojson',
-        'data': 'places.geojson'
-    });
-    map.addLayer({
-        "id": "percorso",
-        "type": "line",
-        "slot": "top",
-        "source": "percorso-line",
-        // "layout": {
-        //     'text-z-elevate': true,
-        // },
-        "paint": {
-            "line-opacity": 0.5,
-            "line-color": "blue",
-            "line-width": 5,
-        },        "interactive": true
-    });
-    map.addLayer({
-        "id": "places-poly",
-        "type": "fill-extrusion",
-        "source": "places-poly",
-        "layout": {
-            'text-z-elevate': true,
-        },
-        "paint": {
-            'fill-extrusion-height': 1,
-            'fill-extrusion-base': 10,
-            'fill-extrusion-color': 'blue',
-            'fill-extrusion-opacity': 0.25
-        },
-        "interactive": true
-    });
-    map.addLayer({
-        "id": "places-circle",
-        "type": "circle",
-        "source": "places",
-        "slot": "middle",
-        'paint': {
-            'circle-color': '#4264fb',
-            'circle-radius': 8,
-            'circle-stroke-width': 2,
-            'circle-stroke-color': '#ffffff'
-        },
-        "layout": {
-            'circle-z-elevate': true,
-        },
-        "interactive": true
-    });
-    map.addLayer({
-        "id": "places-label",
-        "type": "symbol",
-        "source": "places",
-        "slot": "top",
-        'layout': {
-            'symbol-z-elevate': true,
-            'text-field': ['get', 'title'],
-            'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold']
-        },
-        'paint': {
-            'text-color': 'darkblue',
-            'text-halo-color': 'antiquewhite',
-            'text-halo-width': 1
-        },
-        "interactive": true
-    });
-
     // new approach raster tiles instead of styles:
 
     map.addSource('Ligorio1561', {
@@ -517,6 +442,83 @@ map.on('style.load', () => {
     });
 
     // end of new approach raster tiles instead of styles:
+
+    map.addSource('percorso-line', {
+        'type': 'geojson',
+        'data': 'percorso.geojson'
+    });
+    map.addSource('places-poly', {
+        'type': 'geojson',
+        'data': 'places-polygon.geojson'
+    });
+    map.addSource('places', {
+        'type': 'geojson',
+        'data': 'places.geojson'
+    });
+    map.addLayer({
+        "id": "percorso",
+        "type": "line",
+        "slot": "top",
+        "source": "percorso-line",
+        // "layout": {
+        //     'text-z-elevate': true,
+        // },
+        "paint": {
+            "line-opacity": 0.5,
+            "line-color": "blue",
+            "line-width": 5,
+        },        "interactive": true
+    });
+    map.addLayer({
+        "id": "places-poly",
+        "type": "fill-extrusion",
+        "slot": "top",
+        "source": "places-poly",
+        "layout": {
+            'text-z-elevate': true,
+        },
+        "paint": {
+            'fill-extrusion-height': 1,
+            'fill-extrusion-base': 10,
+            'fill-extrusion-color': 'blue',
+            'fill-extrusion-opacity': 0.25
+        },
+        "interactive": true
+    });
+    map.addLayer({
+        "id": "places-circle",
+        "type": "circle",
+        "slot": "top",
+        "source": "places",
+        'paint': {
+            'circle-color': '#4264fb',
+            'circle-radius': 8,
+            'circle-stroke-width': 2,
+            'circle-stroke-color': '#ffffff'
+        },
+        "layout": {
+            'circle-z-elevate': true,
+        },
+        "interactive": true
+    });
+    map.addLayer({
+        "id": "places-label",
+        "type": "symbol",
+        "source": "places",
+        "slot": "top",
+        'layout': {
+            'symbol-z-elevate': true,
+            'text-field': ['get', 'title'],
+            'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold']
+        },
+        'paint': {
+            'text-color': 'darkblue',
+            'text-halo-color': 'antiquewhite',
+            'text-halo-width': 1
+        },
+        "interactive": true
+    });
+
 });
 
 
