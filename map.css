@@ -1,12 +1,12 @@
-@font-face {
-    font-family: 'Merriweather Sans';
-    src: url('https://dlib.biblhertz.it/fonts/MerriweatherSans/MerriweatherSans-Regular.eot?') format('eot'), url('https://dlib.biblhertz.it/fonts/MerriweatherSans/MerriweatherSans-Regular.woff') format('woff'), url('https://dlib.biblhertz.it/fonts/MerriweatherSans/MerriweatherSans-Regular.ttf') format('truetype');
-}
+/*@font-face {*/
+/*    font-family: 'Merriweather Sans';*/
+/*    src: url('https://dlib.biblhertz.it/fonts/MerriweatherSans/MerriweatherSans-Regular.eot?') format('eot'), url('https://dlib.biblhertz.it/fonts/MerriweatherSans/MerriweatherSans-Regular.woff') format('woff'), url('https://dlib.biblhertz.it/fonts/MerriweatherSans/MerriweatherSans-Regular.ttf') format('truetype');*/
+/*}*/
 
-@font-face {
-    font-family: 'Merriweather';
-    src: url('https://dlib.biblhertz.it/fonts/Merriweather/Merriweather-Regular.eot?') format('eot'), url('https://dlib.biblhertz.it/fonts/Merriweather/Merriweather-Regular.woff') format('woff'), url('https://dlib.biblhertz.it/fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
-}
+/*@font-face {*/
+/*    font-family: 'Merriweather';*/
+/*    src: url('https://dlib.biblhertz.it/fonts/Merriweather/Merriweather-Regular.eot?') format('eot'), url('https://dlib.biblhertz.it/fonts/Merriweather/Merriweather-Regular.woff') format('woff'), url('https://dlib.biblhertz.it/fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');*/
+/*}*/
 
 @font-face {
     font-family: 'Roboto';
@@ -120,8 +120,8 @@ input {width: 30%;}
 
 #maps label {
     font-family: 'Roboto', sans-serif;
-    font-size: 90%;
     font-weight: 500;
+    font-size: 0.9rem;
 }
 em {
     font-size: 150%;
@@ -136,7 +136,7 @@ em {
     display: block;
     background-color: transparent;
     line-height: 1.25em;
-
+    color: darkslategray;
 }
 
 /*.mapboxgl-ctrl-group {*/
@@ -190,7 +190,8 @@ em {
     overflow-x: hidden;
     width: 30%;
     /*margin-left: 70%;*/
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Merriweather', sans-serif;*/
     line-height: 1.5em;
     color: rgb(42, 42, 42);
     background-color: rgba(255, 255, 255, 0.85);
@@ -207,7 +208,8 @@ em {
 }
 h3, h5 {
     display: block;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Merriweather', sans-serif;*/
     font-size: 0.8rem;
     background-color: transparent;
     text-decoration: none;
@@ -223,6 +225,9 @@ h3, h5 {
 p {
     text-align: justify;
     text-justify: inter-word;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
 }
 a {
     font-size: 95%;
