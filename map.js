@@ -508,8 +508,9 @@ map.on('style.load', () => {
         // },
         "paint": {
             "line-opacity": 0.5,
-            "line-color": "blue",
+            "line-color": "royalblue",
             "line-width": 5,
+            "line-dasharray": [2, 1],
         },        "interactive": true
     });
     map.addLayer({
@@ -523,7 +524,7 @@ map.on('style.load', () => {
         "paint": {
             'fill-extrusion-height': 1,
             'fill-extrusion-base': 10,
-            'fill-extrusion-color': 'blue',
+            'fill-extrusion-color': 'royalblue',
             'fill-extrusion-opacity': 0.25
         },
         "interactive": true
@@ -534,7 +535,7 @@ map.on('style.load', () => {
         "slot": "top",
         "source": "places",
         'paint': {
-            'circle-color': '#4264fb',
+            'circle-color': 'royalblue',
             'circle-radius': 8,
             'circle-stroke-width': 2,
             'circle-stroke-color': '#ffffff'
@@ -555,7 +556,7 @@ map.on('style.load', () => {
             'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold']
         },
         'paint': {
-            'text-color': 'darkblue',
+            'text-color': 'royalblue',
             'text-halo-color': 'antiquewhite',
             'text-halo-width': 1
         },
