@@ -58,6 +58,7 @@ var sliderVirano1888 = document.getElementById('sliderVirano1888');
 var sliderArtiGraf1935 = document.getElementById('sliderArtiGraf1935');
 var sliderIGM25k1940 = document.getElementById('sliderIGM25k1940');
 var sliderSignorelli1950 = document.getElementById('sliderSignorelli1950');
+var sliderCTR2020 = document.getElementById('sliderCTR2020');
 
 map.on('style.load', () => {
 
@@ -464,6 +465,25 @@ map.on('style.load', () => {
         );
     });
 
+    map.addSource('CTR2020', {
+        'type': 'raster',
+        'url': 'mapbox://kewerner.62130ms1'
+    });
+    map.addLayer({
+        'id': 'CTR2020',
+        'source': 'CTR2020',
+        'type': 'raster',
+        'paint': {
+            'raster-opacity': 0
+        }
+    });
+    sliderCTR2020.addEventListener('input', function(e) {
+        map.setPaintProperty(
+            'CTR2020',
+            'raster-opacity',
+            parseInt(e.target.value, 10) / 100
+        );
+    });
     // end of new approach raster tiles instead of styles:
 
     map.addSource('percorso-line', {
