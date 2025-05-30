@@ -56,6 +56,7 @@ var sliderSpithoever1881 = document.getElementById('sliderSpithoever1881');
 var sliderPiano1882 = document.getElementById('sliderPiano1882');
 var sliderVirano1888 = document.getElementById('sliderVirano1888');
 var sliderArtiGraf1935 = document.getElementById('sliderArtiGraf1935');
+var sliderIGM25k1940 = document.getElementById('sliderIGM25k1940');
 var sliderSignorelli1950 = document.getElementById('sliderSignorelli1950');
 
 map.on('style.load', () => {
@@ -418,6 +419,25 @@ map.on('style.load', () => {
     sliderArtiGraf1935.addEventListener('input', function(e) {
         map.setPaintProperty(
             'ArtiGraf1935',
+            'raster-opacity',
+            parseInt(e.target.value, 10) / 100
+        );
+    });
+    map.addSource('IGM25k1940', {
+        'type': 'raster',
+        'url': 'mapbox://kewerner.ajebhzye'
+    });
+    map.addLayer({
+        'id': 'IGM25k1940',
+        'source': 'IGM25k1940',
+        'type': 'raster',
+        'paint': {
+            'raster-opacity': 0
+        }
+    });
+    sliderIGM25k1940.addEventListener('input', function(e) {
+        map.setPaintProperty(
+            'IGM25k1940',
             'raster-opacity',
             parseInt(e.target.value, 10) / 100
         );
