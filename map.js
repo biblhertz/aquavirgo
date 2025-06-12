@@ -184,6 +184,148 @@ map.on('style.load', () => {
             parseInt(e.target.value, 10) / 100
         );
     });
+
+    map.addSource('CatUrbanoPigna01', {
+        'type': 'raster',
+        'url': 'mapbox://kewerner.crafjfxl'
+    });
+    map.addLayer({
+        'id': 'CatUrbanoPigna01',
+        'source': 'CatUrbanoPigna01',
+        'type': 'raster',
+        'paint': {
+            'raster-opacity': 0
+        }
+    });
+    sliderCatUrbanoPigna01.addEventListener('input', function(e) {
+        map.setPaintProperty(
+            'CatUrbanoPigna01',
+            'raster-opacity',
+            parseInt(e.target.value, 10) / 100
+        );
+    });
+
+    map.addSource('CatUrbanoCampoMarzio02', {
+        'type': 'raster',
+        'url': 'mapbox://kewerner.01isrivp'
+    });
+    map.addLayer({
+        'id': 'CatUrbanoCampoMarzio02',
+        'source': 'CatUrbanoCampoMarzio02',
+        'type': 'raster',
+        'paint': {
+            'raster-opacity': 0
+        }
+    });
+    sliderCatUrbanoCampoMarzio02.addEventListener('input', function(e) {
+        map.setPaintProperty(
+            'CatUrbanoCampoMarzio02',
+            'raster-opacity',
+            parseInt(e.target.value, 10) / 100
+        );
+    });
+
+    map.addSource('CatUrbanoCampoMarzio04', {
+        'type': 'raster',
+        'url': 'mapbox://kewerner.6bagejnb'
+    });
+    map.addLayer({
+        'id': 'CatUrbanoCampoMarzio04',
+        'source': 'CatUrbanoCampoMarzio04',
+        'type': 'raster',
+        'paint': {
+            'raster-opacity': 0
+        }
+    });
+    sliderCatUrbanoCampoMarzio04.addEventListener('input', function(e) {
+        map.setPaintProperty(
+            'CatUrbanoCampoMarzio04',
+            'raster-opacity',
+            parseInt(e.target.value, 10) / 100
+        );
+    });
+
+    map.addSource('CatUrbanoCampoMarzio06', {
+        'type': 'raster',
+        'url': 'mapbox://kewerner.9f4rii7l'
+    });
+    map.addLayer({
+        'id': 'CatUrbanoCampoMarzio06',
+        'source': 'CatUrbanoCampoMarzio06',
+        'type': 'raster',
+        'paint': {
+            'raster-opacity': 0
+        }
+    });
+    sliderCatUrbanoCampoMarzio06.addEventListener('input', function(e) {
+        map.setPaintProperty(
+            'CatUrbanoCampoMarzio06',
+            'raster-opacity',
+            parseInt(e.target.value, 10) / 100
+        );
+    });
+
+    map.addSource('CatUrbanoColonna04', {
+        'type': 'raster',
+        'url': 'mapbox://kewerner.2isi2m17'
+    });
+    map.addLayer({
+        'id': 'CatUrbanoColonna04',
+        'source': 'CatUrbanoColonna04',
+        'type': 'raster',
+        'paint': {
+            'raster-opacity': 0
+        }
+    });
+    sliderCatUrbanoColonna04.addEventListener('input', function(e) {
+        map.setPaintProperty(
+            'CatUrbanoColonna04',
+            'raster-opacity',
+            parseInt(e.target.value, 10) / 100
+        );
+    });
+
+    map.addSource('CatUrbanoTrevi02', {
+        'type': 'raster',
+        'url': 'mapbox://kewerner.anhq6gpb'
+    });
+    map.addLayer({
+        'id': 'CatUrbanoTrevi02',
+        'source': 'CatUrbanoTrevi02',
+        'type': 'raster',
+        'paint': {
+            'raster-opacity': 0
+        }
+    });
+    sliderCatUrbanoTrevi02.addEventListener('input', function(e) {
+        map.setPaintProperty(
+            'CatUrbanoTrevi02',
+            'raster-opacity',
+            parseInt(e.target.value, 10) / 100
+        );
+    });
+
+    map.addSource('CatUrbanoTrevi04', {
+        'type': 'raster',
+        'url': 'mapbox://kewerner.47llp60k'
+    });
+    map.addLayer({
+        'id': 'CatUrbanoTrevi04',
+        'source': 'CatUrbanoTrevi04',
+        'type': 'raster',
+        'paint': {
+            'raster-opacity': 0
+        }
+    });
+    sliderCatUrbanoTrevi04.addEventListener('input', function(e) {
+        map.setPaintProperty(
+            'CatUrbanoTrevi04',
+            'raster-opacity',
+            parseInt(e.target.value, 10) / 100
+        );
+    });
+
+
     // follows Dg150-4290 :
     map.addSource('Censo1829', {
         'type': 'raster',
