@@ -111,7 +111,7 @@
     #maps, #points {
         position: absolute;
         width: 12em;
-        left: 1.25em;
+        left: 10px;
         padding: 10px;
         z-index: 10;
         color: darkslategray;
@@ -121,11 +121,11 @@
     }
 
     #maps {
-        bottom: 2.5em;
+        bottom: 10px;
     }
 
     #points {
-        top: 2.5em;
+        top: 10px;
     }
 
     #maps label {
