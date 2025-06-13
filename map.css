@@ -311,7 +311,13 @@ article {
         width: 100%;
         margin: 0;
     }
-
+article {
+    display: block;
+    visibility: visible;
+}
+section {
+    border: none;
+}
     div.capsule img {
         max-width: 50%;
         max-height: 50%;
