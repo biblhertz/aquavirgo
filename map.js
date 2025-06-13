@@ -38,27 +38,27 @@ for (const input of inputs) {
 }
 
 // new approach raster tiles instead of styles:
-var sliderLigorio1561 = document.getElementById('sliderLigorio1561');
-var sliderBlaeu1663 = document.getElementById('sliderBlaeu1663');
-var sliderFabretti1680 = document.getElementById('sliderFabretti1680');
-var sliderNolli1748 = document.getElementById('sliderNolli1748');
-var sliderVasi1781 = document.getElementById('sliderVasi1781');
-var sliderIngenieri1821 = document.getElementById('sliderIngenieri1821');
-var sliderCenso1829 = document.getElementById('sliderCenso1829');
-var sliderRuga1832 = document.getElementById('sliderRuga1832');
-var sliderCGregoriano1835 = document.getElementById('sliderCGregoriano1835');
-var sliderCRustico1835 = document.getElementById('sliderCRustico1835');
-var sliderRuga1835 = document.getElementById('sliderRuga1835');
-var sliderTrojani1839 = document.getElementById('sliderTrojani1839');
-var sliderCenso1866 = document.getElementById('sliderCenso1866');
-var sliderMaggi1875 = document.getElementById('sliderMaggi1875');
-var sliderSpithoever1881 = document.getElementById('sliderSpithoever1881');
-var sliderPiano1882 = document.getElementById('sliderPiano1882');
-var sliderVirano1888 = document.getElementById('sliderVirano1888');
-var sliderArtiGraf1935 = document.getElementById('sliderArtiGraf1935');
-var sliderIGM25k1940 = document.getElementById('sliderIGM25k1940');
-var sliderSignorelli1950 = document.getElementById('sliderSignorelli1950');
-var sliderCTR2020 = document.getElementById('sliderCTR2020');
+// var sliderLigorio1561 = document.getElementById('sliderLigorio1561');
+// var sliderBlaeu1663 = document.getElementById('sliderBlaeu1663');
+// var sliderFabretti1680 = document.getElementById('sliderFabretti1680');
+// var sliderNolli1748 = document.getElementById('sliderNolli1748');
+// var sliderVasi1781 = document.getElementById('sliderVasi1781');
+// var sliderIngenieri1821 = document.getElementById('sliderIngenieri1821');
+// var sliderCenso1829 = document.getElementById('sliderCenso1829');
+// var sliderRuga1832 = document.getElementById('sliderRuga1832');
+// var sliderCGregoriano1835 = document.getElementById('sliderCGregoriano1835');
+// var sliderCRustico1835 = document.getElementById('sliderCRustico1835');
+// var sliderRuga1835 = document.getElementById('sliderRuga1835');
+// var sliderTrojani1839 = document.getElementById('sliderTrojani1839');
+// var sliderCenso1866 = document.getElementById('sliderCenso1866');
+// var sliderMaggi1875 = document.getElementById('sliderMaggi1875');
+// var sliderSpithoever1881 = document.getElementById('sliderSpithoever1881');
+// var sliderPiano1882 = document.getElementById('sliderPiano1882');
+// var sliderVirano1888 = document.getElementById('sliderVirano1888');
+// var sliderArtiGraf1935 = document.getElementById('sliderArtiGraf1935');
+// var sliderIGM25k1940 = document.getElementById('sliderIGM25k1940');
+// var sliderSignorelli1950 = document.getElementById('sliderSignorelli1950');
+// var sliderCTR2020 = document.getElementById('sliderCTR2020');
 
 map.on('style.load', () => {
 
@@ -607,25 +607,27 @@ map.on('style.load', () => {
         );
     });
 
-    map.addSource('CTR2020', {
-        'type': 'raster',
-        'url': 'mapbox://kewerner.62130ms1'
-    });
-    map.addLayer({
-        'id': 'CTR2020',
-        'source': 'CTR2020',
-        'type': 'raster',
-        'paint': {
-            'raster-opacity': 0
-        }
-    });
-    sliderCTR2020.addEventListener('input', function(e) {
-        map.setPaintProperty(
-            'CTR2020',
-            'raster-opacity',
-            parseInt(e.target.value, 10) / 100
-        );
-    });
+    // bad quality:
+    // map.addSource('CTR2020', {
+    //     'type': 'raster',
+    //     'url': 'mapbox://kewerner.62130ms1'
+    // });
+    // map.addLayer({
+    //     'id': 'CTR2020',
+    //     'source': 'CTR2020',
+    //     'type': 'raster',
+    //     'paint': {
+    //         'raster-opacity': 0
+    //     }
+    // });
+    // sliderCTR2020.addEventListener('input', function(e) {
+    //     map.setPaintProperty(
+    //         'CTR2020',
+    //         'raster-opacity',
+    //         parseInt(e.target.value, 10) / 100
+    //     );
+    // });
+
     // end of new approach raster tiles instead of styles:
 
     map.addSource('percorso-line', {
@@ -716,8 +718,12 @@ map.on('click', function(e) {
         layers: ['places-poly', 'places-label', 'places-circle']
     });
     if (!features.length) {
+        document.getElementById('features').setAttribute('class', 'hidden');
         return;
     }
+    // else {
+    //     document.getElementById('features').addAttribute('class');
+    // }
     var feature = features[0];
     window.open('#' + feature.properties.name, '_parent');
     document.getElementsByClassName('active')[0].removeAttribute("class");
@@ -748,3 +754,17 @@ document.getElementById('points').onclick = function(e) {
 Fancybox.bind("[data-fancybox]", {
 
 });
+
+map.addControl(new mapboxgl.NavigationControl());
+map.addControl(new mapboxgl.FullscreenControl());
+map.addControl(
+    new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        // When active the map will receive updates to the device's location as it changes.
+        trackUserLocation: true,
+        // Draw an arrow next to the location dot to indicate which direction the device is heading.
+        showUserHeading: true
+    })
+);
