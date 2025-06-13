@@ -3,7 +3,7 @@ const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/kewerner/cjcvpi18c0oxl2rpzlbzxki2m', //clpv72kf201dq01qtd03ig1ka' //clpv72kf201dq01qtd03ig1ka', //ckz8gxm82000z14p666y9alzh',
     center: [12.48200, 41.9050],
-    hash: false, // otherwise conflict with regular id-based hashes
+    hash: true, // otherwise conflict with regular id-based hashes
     zoom: 15,
     bearing: 0,
     pitch: 0,
@@ -750,6 +750,29 @@ document.getElementById('points').onclick = function(e) {
         document.getElementById('features').removeAttribute('class');
     }
 };
+
+
+document.getElementById('urbe').addEventListener('click', () => {
+    map.flyTo({
+        center: [ 12.48, 41.903741  ],
+        zoom: 14,
+        essential: true // this animation is considered essential with respect to prefers-reduced-motion
+    });
+});
+document.getElementById('suburbio').addEventListener('click', () => {
+    map.flyTo({
+        center: [ 12.585036, 41.903741  ],
+        zoom: 13,
+        essential: true // this animation is considered essential with respect to prefers-reduced-motion
+    });
+});
+document.getElementById('caturbano').addEventListener('click', () => {
+    map.flyTo({
+        center: [ 12.483, 41.903741  ],
+        zoom: 15,
+        essential: true // this animation is considered essential with respect to prefers-reduced-motion
+    });
+});
 
 Fancybox.bind("[data-fancybox]", {
 
