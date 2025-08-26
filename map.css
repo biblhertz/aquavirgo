@@ -19,8 +19,9 @@
         src: url('https://dlib.biblhertz.it/fonts/Roboto/Roboto-Medium.eot?') format('eot'), url('https://dlib.biblhertz.it/fonts/Roboto/Roboto-Medium.woff') format('woff'), url('https://dlib.biblhertz.it/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
     }
     .capsule {
-        padding: 0.5em 0 0 0;
-        margin-bottom: 1em;
+        padding: 0.25em 0.15em 0.15em 0;
+        background-color: #eaeaea;
+        border-radius: 4px;
     }
 
     .capsule a {
@@ -32,7 +33,7 @@
 
     .capsule p {
         font-size: 90%;
-        font-style: italic;
+        padding: 0 0.5em 0 .5em;
     }
 
     .capsule a img {
@@ -143,6 +144,7 @@
         letter-spacing: 0.05em;
         font-style: italic;
         font-weight: 600;
+        color: darkslategray;
     }
 
     #points button {
