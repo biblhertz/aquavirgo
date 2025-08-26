@@ -78,9 +78,6 @@
         visibility: hidden;
     }
 
-    /*em {*/
-    /*    text-shadow: 1px 1px 1px whitesmoke;*/
-    /*}*/
     .hidden {
         display: none;
     }
@@ -141,10 +138,9 @@
     }
 
     em {
-        letter-spacing: 0.05em;
-        font-style: italic;
-        font-weight: 600;
-        color: darkslategray;
+        letter-spacing: 0.025em;
+        font-style: normal;
+        text-shadow: 1px 1px 1px darkgray;
     }
 
     #points button {
