@@ -10,6 +10,13 @@ const map = new mapboxgl.Map({
     antialias: true
 });
 
+// $(document).ready(function() {
+//     // Open div when clicking RIGHT
+//     $('.slidePoints').click(function() {
+//         $('#slidePoints').slideToggle(300);
+//     });
+// });
+
 $( function() {
     $( "#maps" ).accordion();
 } );

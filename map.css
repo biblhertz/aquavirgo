@@ -106,7 +106,7 @@
         width: 30%;
     }
 
-    #maps, #points {
+    #maps {
         position: absolute;
         width: 12em;
         left: 10px;
@@ -119,7 +119,8 @@
     }
 
     #maps {
-        bottom: 10px;
+        top: 10px;
+        height: fit-content;
     }
 
     #points {
@@ -143,7 +144,7 @@
         text-shadow: 1px 1px 1px darkgray;
     }
 
-    #points button {
+    #maps button {
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 0.9rem;
