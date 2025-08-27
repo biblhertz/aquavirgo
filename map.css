@@ -123,10 +123,6 @@
         height: fit-content;
     }
 
-    #points {
-        top: 10px;
-    }
-
     #maps label {
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
@@ -300,7 +296,7 @@ article {
 }
 
 @media print {
-    #map, #maps, #points {
+    #map, #maps {
         display: none;
     }
 #map {
