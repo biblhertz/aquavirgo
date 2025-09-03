@@ -152,6 +152,16 @@
         color: darkslategray;
     }
 
+    p.ui-state-default:before {
+        content: '▷ ';
+        color: gray;
+    }
+
+    p.ui-state-active:before {
+    content: '▽ ';
+        color: gray;
+}
+
     /*.mapboxgl-ctrl-group {*/
     /*    padding: 0.5em;*/
     /*    margin: 0.75em;*/
