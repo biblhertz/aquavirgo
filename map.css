@@ -152,10 +152,25 @@
         color: darkslategray;
     }
 
+        #maps {
+        background-color: whitesmoke;
+        }
+
+    .ui-accordion-content {
+        padding-top: 0.25em;
+        background-color: rgb(252,252,252);
+        border-radius: 4px;
+        }
+
     p.ui-state-default:before {
         content: '▷ ';
         color: gray;
     }
+p.ui-accordion-header {
+    border-bottom: 2px groove white;
+    display: block;
+    padding-bottom: 0.5em;
+}
 
     p.ui-state-active:before {
     content: '▽ ';
