@@ -152,7 +152,7 @@
         color: darkslategray;
     }
 
-        #maps {
+        #maps, #features {
         background-color: whitesmoke;
         }
 
@@ -232,13 +232,13 @@ input[type="radio"] {
         /*box-shadow: 0 1px 2px rgb(0 0 0 / 20%);*/
         overflow-y: scroll;
         overflow-x: hidden;
-        width: 30%;
+        width: 40%;
         /*margin-left: 70%;*/
         font-family: 'Roboto', sans-serif;
         /*font-family: 'Merriweather', sans-serif;*/
         line-height: 1.5em;
         color: rgb(42, 42, 42);
-        background-color: rgba(255, 255, 255, 0.85);
+        /*background-color: rgba(255, 255, 255, 0.85);*/
         font-size: 90%;
         /*border-left: thin groove black;*/
         border-radius: 4px;
@@ -308,8 +308,8 @@ input[type="radio"] {
     }
 
     section {
-        border-top: thin solid gray;
-        border-bottom: thin solid gray;
+        border-top: 2px groove white;
+        border-bottom: 2px groove white;
     }
 }
 
