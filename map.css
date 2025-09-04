@@ -170,7 +170,15 @@ p.ui-accordion-header {
     /*padding-top: -0.25em;*/
     padding-bottom: 0.75em;
 }
-input[type="radio"] {
+div.ui-accordion-content-active {
+    border-bottom: 2px groove white;
+}
+    p.ui-accordion-header:last-of-type,
+    div.ui-accordion-content-active:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    input[type="radio"] {
         width: 10px;
     }
     p.ui-state-active:before {
