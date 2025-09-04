@@ -651,14 +651,18 @@ map.on('style.load', () => {
     });
     map.addLayer({
         "id": "percorso",
-        "type": "line",
+        "type": "line", //fill-extrusion
         "slot": "top",
         "source": "percorso-line",
         // "layout": {
         //     'text-z-elevate': true,
         // },
         "paint": {
-            "line-opacity": 0.5,
+            // 'fill-extrusion-height': 5,
+            // 'fill-extrusion-base': 1,
+            // 'fill-extrusion-color': 'royalblue',
+            // 'fill-extrusion-opacity': 0.75
+            "line-opacity": 1,
             "line-color": "royalblue",
             "line-width": 5,
             "line-dasharray": [2, 1],
@@ -676,7 +680,7 @@ map.on('style.load', () => {
             'fill-extrusion-height': 1,
             'fill-extrusion-base': 10,
             'fill-extrusion-color': 'royalblue',
-            'fill-extrusion-opacity': 0.25
+            'fill-extrusion-opacity': 0.75
         },
         "interactive": true
     });
@@ -687,9 +691,9 @@ map.on('style.load', () => {
         "source": "places",
         'paint': {
             'circle-color': 'royalblue',
-            'circle-radius': 8,
-            'circle-stroke-width': 2,
-            'circle-stroke-color': '#ffffff'
+            'circle-radius': 4,
+            'circle-stroke-width': 1,
+            'circle-stroke-color': 'white'
         },
         "layout": {
             'circle-z-elevate': true,
@@ -708,8 +712,8 @@ map.on('style.load', () => {
         },
         'paint': {
             'text-color': 'royalblue',
-            'text-halo-color': 'antiquewhite',
-            'text-halo-width': 1
+            'text-halo-color': 'white', //antiquewhite
+            'text-halo-width': 0.1
         },
         "interactive": true
     });
