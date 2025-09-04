@@ -654,18 +654,13 @@ map.on('style.load', () => {
         "type": "line", //fill-extrusion
         "slot": "top",
         "source": "percorso-line",
-        // "layout": {
-        //     'text-z-elevate': true,
-        // },
         "paint": {
-            // 'fill-extrusion-height': 5,
-            // 'fill-extrusion-base': 1,
-            // 'fill-extrusion-color': 'royalblue',
-            // 'fill-extrusion-opacity': 0.75
+          "line-elevation-reference": "ground",
+          "line-gap-width": 6,
             "line-opacity": 1,
             "line-color": "royalblue",
-            "line-width": 5,
-            "line-dasharray": [2, 1],
+            "line-width": 2,
+            // "line-dasharray": [3, 1],
         },        "interactive": true
     });
     map.addLayer({
