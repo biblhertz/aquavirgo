@@ -716,6 +716,21 @@ map.on('style.load', () => {
 
 });
 
+// let toggler = document.querySelector(".toggler");
+//
+// window.addEventListener("click", event => {
+//   if(event.target.className == "toggler" || event.target.className == "toggle") {
+//     document.body.classList.toggle("show-nav");
+//   } else if (event.target.className == "overlay") {
+//     document.body.classList.remove("show-nav");
+//   }
+//   // Change Toggler Icon
+//   if(document.body.className == "show-nav") {
+//     toggler.innerHTML = "&laquo";
+//   } else {
+//     toggler.innerHTML = "&raquo";
+//   }
+// });
 
 map.on('click', function(e) {
 
@@ -785,8 +800,8 @@ Fancybox.bind("[data-fancybox]", {
 
 });
 
-map.addControl(new mapboxgl.NavigationControl());
-map.addControl(new mapboxgl.FullscreenControl());
+map.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
+map.addControl(new mapboxgl.FullscreenControl(), 'bottom-left');
 map.addControl(
     new mapboxgl.GeolocateControl({
         positionOptions: {
@@ -796,5 +811,5 @@ map.addControl(
         trackUserLocation: true,
         // Draw an arrow next to the location dot to indicate which direction the device is heading.
         showUserHeading: true
-    })
+    }), 'bottom-left'
 );

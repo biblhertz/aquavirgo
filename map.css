@@ -110,17 +110,14 @@
         position: absolute;
         width: 12em;
         left: 10px;
+        top: 10px;
+        height: fit-content;
         padding: 10px;
         z-index: 10;
         color: darkslategray;
         background-color: rgba(255, 255, 255, 0.85);
         border-radius: 4px;
         box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
-    }
-
-    #maps {
-        top: 10px;
-        height: fit-content;
     }
 
     #maps label {
@@ -153,7 +150,8 @@
     }
 
         #maps, #features {
-        background-color: whitesmoke;
+        background-color: white; /*whitesmoke;*/
+            border: thin solid darkgray;
         }
 
     .ui-accordion-content {
@@ -232,7 +230,7 @@ input[type="radio"] {
         /*box-shadow: 0 1px 2px rgb(0 0 0 / 20%);*/
         overflow-y: scroll;
         overflow-x: hidden;
-        width: 40%;
+        width: 30%;
         /*margin-left: 70%;*/
         font-family: 'Roboto', sans-serif;
         /*font-family: 'Merriweather', sans-serif;*/
@@ -294,6 +292,7 @@ input[type="radio"] {
 
     article.active {
         display: block;
+        padding-top: 1em;
     }
 
     a:hover, mark:hover {
