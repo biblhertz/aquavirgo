@@ -157,23 +157,26 @@
         }
 
     .ui-accordion-content {
-        padding-top: 0.25em;
-        background-color: rgb(252,252,252);
+        /*padding-top: 0.25em;*/
+        /*background-color: rgb(252,252,252);*/
         border-radius: 4px;
         }
 
     p.ui-state-default:before {
-        content: '▷ ';
+        content: '▷ ';
         color: gray;
     }
 p.ui-accordion-header {
     border-bottom: 2px groove white;
     display: block;
-    padding-bottom: 0.5em;
+    /*padding-top: -0.25em;*/
+    padding-bottom: 0.75em;
 }
-
+input[type="radio"] {
+        width: 10px;
+    }
     p.ui-state-active:before {
-    content: '▽ ';
+    content: '▽ ';
         color: gray;
 }
 
