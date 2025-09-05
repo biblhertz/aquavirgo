@@ -654,28 +654,32 @@ map.on('style.load', () => {
         "type": "line", //fill-extrusion
         "slot": "top",
         "source": "percorso-line",
+      "layout": {
+        "line-cap": "round",
+      },
         "paint": {
           "line-elevation-reference": "ground",
           "line-gap-width": 6,
             "line-opacity": 1,
             "line-color": "royalblue",
-            "line-width": 2,
+            "line-width": 3,
             // "line-dasharray": [3, 1],
         },        "interactive": true
     });
     map.addLayer({
         "id": "places-poly",
-        "type": "fill-extrusion",
+        "type": "fill",
         "slot": "top",
         "source": "places-poly",
         "layout": {
-            'text-z-elevate': true,
         },
         "paint": {
-            'fill-extrusion-height': 1,
-            'fill-extrusion-base': 10,
-            'fill-extrusion-color': 'royalblue',
-            'fill-extrusion-opacity': 0.75
+            // 'fill-extrusion-height': 1,
+            // 'fill-extrusion-base': 10,
+          'fill-translate': [0,-1],
+          'fill-color': 'blue',
+            'fill-outline-color': 'white',
+            'fill-opacity': 0.5
         },
         "interactive": true
     });
@@ -685,13 +689,14 @@ map.on('style.load', () => {
         "slot": "top",
         "source": "places",
         'paint': {
-            'circle-color': 'royalblue',
+          'circle-translate': [0,-1],
+            'circle-color': 'red',
             'circle-radius': 4,
             'circle-stroke-width': 1,
             'circle-stroke-color': 'white'
         },
         "layout": {
-            'circle-z-elevate': true,
+            'circle-z-elevate': true, //why?
         },
         "interactive": true
     });
@@ -701,14 +706,17 @@ map.on('style.load', () => {
         "source": "places",
         "slot": "top",
         'layout': {
-            'symbol-z-elevate': true,
+            'text-offset': [0,-3],
             'text-field': ['get', 'title'],
-            'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold']
+            'text-size': 14,
+            'text-font': ['Roboto', 'Open Sans Regular', 'Arial Unicode MS Regular']
         },
         'paint': {
-            'text-color': 'royalblue',
+          'text-translate': [0,-1],
+          'text-color': 'black',
             'text-halo-color': 'white', //antiquewhite
-            'text-halo-width': 0.1
+            'text-halo-blur': 1,
+            'text-halo-width': 2
         },
         "interactive": true
     });
