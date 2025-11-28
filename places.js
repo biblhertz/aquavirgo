@@ -20,8 +20,8 @@ var places = {
         "speed": 1,
         "pitch": 40
     },
-    "FontanileBenedettoXIV": {
-        "center":  [ 12.575036, 41.903741 ],
+    "BoccaLeone": {
+        "center":  [ 12.574744763916105, 41.90386400089634 ],
         "bearing": 32,
         "zoom": 16.5,
         "speed": 1,
@@ -34,8 +34,8 @@ var places = {
         "speed": 1,
         "pitch": 40
     },
-    "ViaPietralata": {
-        "center":  [ 12.533035, 41.926767 ],
+    "Pietralata": {
+        "center":  [ 12.530893680892728, 41.926881729209335 ],
         "bearing": 32,
         "zoom": 16.5,
         "speed": 1,
@@ -56,7 +56,7 @@ var places = {
         "pitch": 40
     },
     "FontanaFlaminia": {
-        "center":  [ 12.473258, 41.918256 ],
+        "center":  [ 12.473242535696397, 41.91845183702552 ],
         "bearing": 32,
         "zoom": 16.5,
         "speed": 1,

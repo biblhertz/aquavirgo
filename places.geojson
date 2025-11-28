@@ -6,12 +6,12 @@
 { "type": "Feature", "properties": { "name": "SorgentiSalone", "title": "Sorgenti a Salone", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.6331098, 41.9112259 ] } },
 { "type": "Feature", "properties": { "name": "VillaTrivulzio", "title": "Villa Trivulzio", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.629723, 41.91662 ] } },
 { "type": "Feature", "properties": { "name": "TerreniAniene", "title": "Terreni verso Aniene", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.630838, 41.918616 ] } },
-{ "type": "Feature", "properties": { "name": "FontanileBenedettoXIV", "title": "Fontanile di Benedetto XIV", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.575036, 41.903741 ] } },
+{ "type": "Feature", "properties": { "name": "BoccaLeone", "title": "Bocca di Leone", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.574744763916105, 41.90386400089634 ] } },
 { "type": "Feature", "properties": { "name": "AcquedotttoEmergente", "title": "Tratto acquedotto emergente", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.565932, 41.90207 ] } },
-{ "type": "Feature", "properties": { "name": "ViaPietralata", "title": "Via di Pietralata", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.533035, 41.926767 ] } },
+{ "type": "Feature", "properties": { "name": "Pietralata", "title": "Pietralata", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.530893680892728, 41.926881729209335 ] } },
 { "type": "Feature", "properties": { "name": "PiazzaSEmerenziana", "title": "Piazza Santa Emerenziana", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.516206, 41.929042 ] } },
 { "type": "Feature", "properties": { "name": "VillaGiulia", "title": "Villa Giulia", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.478479, 41.91802 ] } },
-{ "type": "Feature", "properties": { "name": "FontanaFlaminia", "title": "Fontana Via Flaminia", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.473258, 41.918256 ] } },
+{ "type": "Feature", "properties": { "name": "FontanaFlaminia", "title": "Fontana Via Flaminia", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.473242535696397, 41.91845183702552 ] } },
 { "type": "Feature", "properties": { "name": "Nazzareno", "title": "Rovine Via del Nazzareno", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.4837635, 41.9026744  ] } },
 { "type": "Feature", "properties": { "name": "FontanaTrevi", "title": "Fontana di Trevi", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.4832644, 41.9009839 ] } }
 ]

@@ -18,6 +18,22 @@
         font-family: 'Roboto Medium';
         src: url('https://dlib.biblhertz.it/fonts/Roboto/Roboto-Medium.eot?') format('eot'), url('https://dlib.biblhertz.it/fonts/Roboto/Roboto-Medium.woff') format('woff'), url('https://dlib.biblhertz.it/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
     }
+
+    div.inscription {
+        padding: 1em;
+        margin-bottom: 2em;
+        border: thin groove lightgray;
+    }
+
+    code {
+        display: block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #0a0a0a;
+        text-align: center;
+    }
     .capsule {
         padding: 0.25em 0.15em 0.15em 0;
         background-color: #eaeaea;
@@ -315,7 +331,7 @@
     aside {
         font-size: small;
         border-left: thin dashed grey;
-        margin-left: -1em;
+        margin-left: 0em;
         padding-left: 1em;
     }
 

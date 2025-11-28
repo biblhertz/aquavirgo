@@ -690,8 +690,8 @@ map.on('style.load', () => {
         "source": "places",
         'paint': {
           'circle-translate': [0,-1],
-            'circle-color': 'red',
-            'circle-radius': 4,
+            'circle-color': 'violet',
+            'circle-radius': 8,
             'circle-stroke-width': 1,
             'circle-stroke-color': 'white'
         },
