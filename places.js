@@ -27,13 +27,6 @@ var places = {
         "speed": 1,
         "pitch": 40
     },
-    "AcquedotttoEmergente": {
-        "center":  [ 12.565932, 41.90207 ],
-        "bearing": 32,
-        "zoom": 16.5,
-        "speed": 1,
-        "pitch": 40
-    },
     "Pietralata": {
         "center":  [ 12.530893680892728, 41.926881729209335 ],
         "bearing": 32,
@@ -62,7 +55,7 @@ var places = {
         "speed": 1,
         "pitch": 40
     },
-    "Nazzareno": {
+    "Nazareno": {
         "center":  [ 12.4837635, 41.9026744 ],
         "bearing": 290,
         "zoom": 16.5,
