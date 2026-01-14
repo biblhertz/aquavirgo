@@ -13,13 +13,6 @@ var places = {
         "speed": 1,
         "pitch": 40
     },
-    "TerreniAniene": {
-        "center":  [ 12.630838, 41.918616 ],
-        "bearing": 32,
-        "zoom": 16.5,
-        "speed": 1,
-        "pitch": 40
-    },
     "BoccaLeone": {
         "center":  [ 12.574744763916105, 41.90386400089634 ],
         "bearing": 32,

@@ -5,7 +5,6 @@
 "features": [
 { "type": "Feature", "properties": { "name": "SorgentiSalone", "title": "Sorgenti a Salone", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.6331098, 41.9112259 ] } },
 { "type": "Feature", "properties": { "name": "VillaTrivulzio", "title": "Villa Trivulzio", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.629723, 41.91662 ] } },
-{ "type": "Feature", "properties": { "name": "TerreniAniene", "title": "Terreni verso Aniene", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.630838, 41.918616 ] } },
 { "type": "Feature", "properties": { "name": "BoccaLeone", "title": "Bocca di Leone", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.574744763916105, 41.90386400089634 ] } },
 { "type": "Feature", "properties": { "name": "Pietralata", "title": "Pietralata", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.530893680892728, 41.926881729209335 ] } },
 { "type": "Feature", "properties": { "name": "PiazzaSEmerenziana", "title": "Piazza Santa Emerenziana", "marker": "circle" }, "geometry": { "type": "Point", "coordinates": [ 12.516206, 41.929042 ] } },
